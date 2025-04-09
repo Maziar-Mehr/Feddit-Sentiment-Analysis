@@ -8,7 +8,7 @@ This repository hosts a **Microservices-based Sentiment Analysis API**, built wi
 
 ## **System Architecture 🏗️**  
 
-Our microservices architecture consists of the following services:
+The microservice architecture consists of the following services:
 
 ### 🔹 **API Gateway (Flask)**
 - Handles user requests and routes them to the appropriate service.  
