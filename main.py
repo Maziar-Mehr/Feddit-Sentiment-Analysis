@@ -14,7 +14,7 @@ except Exception as e:
 app = Flask(__name__)
 
 # ✅ Database configuration
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:mysecretpassword@localhost:5432/postgres"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:mysecretpassword@db:5432/postgres"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # ✅ Initialize SQLAlchemy
