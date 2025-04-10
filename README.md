@@ -11,7 +11,16 @@ Welcome to **Subfeddit**, a high-performance **Flask-based Sentiment Analysis AP
 
 ## 🏗️ **System Architecture**  
 
-┌──────────────────────────────┐ │ 🚀 API Gateway (Flask) │ │ - Handles user requests │ │ - Routes to sentiment model │ └──────────────┬───────────────┘ │ ┌──────────────▼──────────────┐ │ 🤖 NLP Model (HuggingFace) │ │ - Classifies sentiment │ │ - Outputs confidence scores │ └──────────────┬──────────────┘ │ ┌──────────────▼──────────────┐ │ 📜 Logging Mechanism │ │ - Tracks API interactions │ │ - Debugging & monitoring │ └─────────────────────────────┘
+| Component                 | Functionality                                         |
+|---------------------------|------------------------------------------------------|
+| 🚀 **API Gateway (Flask)** | Handles user requests & routes them to analysis    |
+| 🤖 **NLP Model (HuggingFace)** | Classifies sentiment & provides confidence scores  |
+| 📜 **Logging Mechanism**  | Tracks API interactions & enables debugging         |
+
+**Architecture Flow:**  
+1️⃣ **User submits a comment** → 📡 API Gateway processes request  
+2️⃣ **API Gateway forwards it to NLP Model** → 🤖 Sentiment analysis occurs  
+3️⃣ **Result is returned to the user** → 📜 Logging ensures request tracking  
 
 ## 🛠️ **Tech Stack**  
 🚀 **Built with cutting-edge technology!**  
