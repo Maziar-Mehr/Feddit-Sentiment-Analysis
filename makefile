@@ -17,7 +17,8 @@ docker-stop:
 
 # Run tests (ensuring the database container is running first)
 test:
-	docker-compose down
+	docker-compose down || true # Attempt to stop previous services, ignore errors
+	docker system prune -f --volumes # Remove unused Docker resources (containers, images, volumes, networks)
 	docker-compose up -d db  # Ensure PostgreSQL is started
 	sleep 15  # Give the database extra time to initialize
 	pytest -v test.py
