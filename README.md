@@ -1,24 +1,29 @@
-Subfeddit – Sentiment Analysis Microservices 🚀
-Overview
-Subfeddit is a Flask-based Sentiment Analysis API powered by Hugging Face Transformers. It dynamically analyzes user-generated comments, classifying them as positive or negative, and provides a polarity confidence score.
+# 🌟 Subfeddit – Sentiment Analysis Microservices 🚀  
 
-System Architecture 🏗️
-🔹 API Gateway (Flask)
-Handles user requests and performs sentiment analysis.
+## 🏆 **Overview**  
+Welcome to **Subfeddit**, a high-performance **Flask-based Sentiment Analysis API** powered by **Hugging Face Transformers**. This microservice **dynamically analyzes user-generated comments**, classifying them as **positive** or **negative**, while providing a confidence score (`polarity`).  
 
-Provides RESTful endpoints for querying processed comments.
+🎯 **Key Features:**  
+✅ Real-time **sentiment classification**  
+✅ Optimized for **speed and scalability**  
+✅ Seamless **integration with microservices**  
+✅ Automated **testing via GitHub Actions**  
 
-🔹 Sentiment Analysis Service (NLP Model)
-Uses Hugging Face Transformers for text classification.
+## 🏗️ **System Architecture**  
 
-Outputs structured results with:
+┌──────────────────────────────┐ │ 🚀 API Gateway (Flask) │ │ - Handles user requests │ │ - Routes to sentiment model │ └──────────────┬───────────────┘ │ ┌──────────────▼──────────────┐ │ 🤖 NLP Model (HuggingFace) │ │ - Classifies sentiment │ │ - Outputs confidence scores │ └──────────────┬──────────────┘ │ ┌──────────────▼──────────────┐ │ 📜 Logging Mechanism │ │ - Tracks API interactions │ │ - Debugging & monitoring │ └─────────────────────────────┘
 
-Polarity (confidence score)
+## 🛠️ **Tech Stack**  
+🚀 **Built with cutting-edge technology!**  
 
-Classification (positive or negative)
+🔹 **Python** (Flask-based API)  
+🔹 **Transformers** – Hugging Face NLP models  
+🔹 **Docker** – Containerized deployment  
+🔹 **GitHub Actions** – Automated testing  
 
-🔹 Logging Mechanism
-Tracks API requests for debugging and performance monitoring.
+## 🚀 **Installation & Setup**  
 
-Tech Stack 🛠️
-✅ Python (Flask-based API) ✅ Transformers – Hugging Face NLP models ✅ Docker – Containerized deployment ✅ GitHub Actions – Automated testing and CI/CD
+### 📥 **1️⃣ Clone the Repository**
+```bash
+git clone <your-repo-url>
+cd subfeddit
