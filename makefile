@@ -17,6 +17,7 @@ docker-stop:
 
 # Run tests (ensuring the database container is running first)
 test:
+	docker-compose down
 	docker-compose up -d db  # Ensure PostgreSQL is started
 	sleep 15  # Give the database extra time to initialize
 	pytest -v test.py
