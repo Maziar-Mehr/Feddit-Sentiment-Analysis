@@ -9,6 +9,7 @@ install:
 # Start Docker services (PostgreSQL + Feddit API)
 docker-start:
     docker-compose up -d
+    sleep 5  # Ensure services start properly
 
 # Stop Docker services
 docker-stop:
@@ -17,7 +18,7 @@ docker-stop:
 # Run tests (ensuring the database container is running first)
 test:
     docker-compose up -d db  # Ensure PostgreSQL is started
-    sleep 5  # Give the database time to initialize
+    sleep 15  # Give the database extra time to initialize
     pytest -v test.py
 
 # Run the Flask app (inside the container)
@@ -39,3 +40,4 @@ help:
     @echo "  make test         - Run unit tests (ensuring PostgreSQL is up)"
     @echo "  make run          - Start the Flask application"
     @echo "  make clean        - Remove temporary files"
+
