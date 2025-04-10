@@ -40,4 +40,3 @@ help:
     @echo "  make test         - Run unit tests (ensuring PostgreSQL is up)"
     @echo "  make run          - Start the Flask application"
     @echo "  make clean        - Remove temporary files"
-
