@@ -3,8 +3,8 @@ PYTHON := python3
 
 # Install dependencies
 install:
-    $(PYTHON) -m pip install --upgrade pip
-    if [ -f requirements.txt ]; then $(PYTHON) -m pip install -r requirements.txt; fi
+	$(PYTHON) -m pip install --upgrade pip
+	if [ -f requirements.txt ]; then $(PYTHON) -m pip install -r requirements.txt; fi
 
 # Start Docker services (PostgreSQL + Feddit API)
 docker-start:
