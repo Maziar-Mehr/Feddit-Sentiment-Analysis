@@ -1,46 +1,24 @@
-# subfeddit
-# Sentiment Analysis Microservices 🚀  
+Subfeddit – Sentiment Analysis Microservices 🚀
+Overview
+Subfeddit is a Flask-based Sentiment Analysis API powered by Hugging Face Transformers. It dynamically analyzes user-generated comments, classifying them as positive or negative, and provides a polarity confidence score.
 
-## **Overview**  
-This repository hosts a **Microservices-based Sentiment Analysis API**, built with **Flask, Hugging Face Transformers, and PostgreSQL**. It provides an efficient way to analyze user-generated comments and classify them as **positive** or **negative** with confidence scores.
+System Architecture 🏗️
+🔹 API Gateway (Flask)
+Handles user requests and performs sentiment analysis.
 
----
+Provides RESTful endpoints for querying processed comments.
 
-## **System Architecture 🏗️**  
+🔹 Sentiment Analysis Service (NLP Model)
+Uses Hugging Face Transformers for text classification.
 
-The microservice architecture consists of the following services:
+Outputs structured results with:
 
-### 🔹 **API Gateway (Flask)**
-- Handles user requests and routes them to the appropriate service.  
+Polarity (confidence score)
 
-### 🔹 **Sentiment Analysis Service (NLP Model)**
-- Uses **RoBERTa-based Transformers** for text classification.  
-- Runs **asynchronously** for fast inference.  
+Classification (positive or negative)
 
-### 🔹 **Database Service (PostgreSQL)**
-- Stores processed comments and sentiment scores.  
-- Supports efficient retrieval for analytics.  
+🔹 Logging Mechanism
+Tracks API requests for debugging and performance monitoring.
 
-### 🔹 **Authentication & Logging Service**
-- Implements **OAuth2** authentication.  
-- Logs API interactions for monitoring and debugging.  
-
----
-
-## **Tech Stack 🛠️**  
-
-✅ **Python 3.11** (with virtual environment)  
-✅ **Flask** – Lightweight API framework  
-✅ **Transformers** – Hugging Face NLP models  
-✅ **PostgreSQL** – Database for comment storage  
-✅ **Docker** – Containerized microservices deployment  
-✅ **Kubernetes** – For scalable orchestration  
-
----
-
-## **Installation & Setup**  
-
-### **Step 1: Clone the Repository**
-```bash
-git clone <your-repo-url>
-cd sentiment-analysis-microservices
+Tech Stack 🛠️
+✅ Python (Flask-based API) ✅ Transformers – Hugging Face NLP models ✅ Docker – Containerized deployment ✅ GitHub Actions – Automated testing and CI/CD
