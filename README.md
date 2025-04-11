@@ -30,17 +30,58 @@ Welcome to **Subfeddit**, a high-performance **Flask-based Sentiment Analysis AP
 🔹 **Docker** – Containerized deployment  
 🔹 **GitHub Actions** – Automated testing  
 
-## 📦 Installation & Dependency Management
+Markdown
+
+**📦 Installation & Dependency Management**
 
 Install the required dependencies using the following command:
 
 ```bash
 make install
-```bash
-
-## 🐳 Start & Stop Services
+🐳 Start & Stop Services
 
 Start the PostgreSQL and API services with:
 
+Bash
 
 make docker-start
+Stop the running containers using:
+
+Bash
+
+make docker-stop
+🚀 Run the Application
+
+Launch the Flask API service with:
+
+Bash
+
+make run
+✅ Execute Automated Tests
+
+Run unit tests to validate API functionality with:
+
+Bash
+
+make test
+🧹 Cleanup Utility
+
+Remove temporary files and cache with:
+
+Bash
+
+make clean
+ℹ️ Available Commands
+
+For a list of all available make commands and their descriptions, run:
+
+Bash
+
+make help
+Available commands:
+  make install         - Install dependencies
+  make docker-start    - Start PostgreSQL + Feddit API
+  make docker-stop     - Stop running containers
+  make test            - Run unit tests (ensuring PostgreSQL is up)
+  make run             - Start the Flask application
+  make clean           - Remove temporary files
