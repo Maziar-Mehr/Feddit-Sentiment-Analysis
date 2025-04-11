@@ -34,5 +34,4 @@ Welcome to **Subfeddit**, a high-performance **Flask-based Sentiment Analysis AP
 
 ### 📥 **1️⃣ Clone the Repository**
 ```bash
-git clone <your-repo-url>
-cd subfeddit
+git clone <https://github.com/Maziar-Mehr/subfeddit.git>
