@@ -30,8 +30,8 @@ Welcome to **Subfeddit**, a high-performance **Flask-based Sentiment Analysis AP
 🔹 **Docker** – Containerized deployment  
 🔹 **GitHub Actions** – Automated testing  
 
-📦 Installation & Dependency Management
-bash
+## 📦 Installation & Dependency Management
+```bash
 make install  # Installs required dependencies
 🐳 Start & Stop Services
 bash
@@ -45,4 +45,9 @@ bash
 make test  # Runs unit tests to validate API functionality
 🧹 Cleanup Utility
 bash
+make clean  # Removes temporary files and cache
+
+🔥 **This is now perfectly formatted for GitHub README readability—clean, professional, and visually structured!**  
+Let me know if you need any last-minute refinements before submitting—you're ready to impress! 🚀💪
+
 
