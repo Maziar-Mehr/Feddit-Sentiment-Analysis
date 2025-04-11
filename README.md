@@ -42,8 +42,8 @@ Install the required dependencies using the following command:
 
 ```bash
 make install
-🐳 Start & Stop Services
-Start the PostgreSQL and API services with:
+## 🐳 Start & Stop Services
+### Start the PostgreSQL and API services with:
 
 Bash
 
