@@ -34,54 +34,40 @@ Markdown
 
 **📦 Installation & Dependency Management**
 
-Install the required dependencies using the following command:
+📦 Installation & Dependency Management Install the required dependencies using the following command:
 
-```bash
+bash
 make install
-🐳 Start & Stop Services
+🐳 Start & Stop Services Start the PostgreSQL and API services with:
 
-Start the PostgreSQL and API services with:
-
-Bash
-
+bash
 make docker-start
 Stop the running containers using:
 
-Bash
-
+bash
 make docker-stop
-🚀 Run the Application
+🚀 Run the Application Launch the Flask API service with:
 
-Launch the Flask API service with:
-
-Bash
-
+bash
 make run
-✅ Execute Automated Tests
+✅ Execute Automated Tests Run unit tests to validate API functionality with:
 
-Run unit tests to validate API functionality with:
-
-Bash
-
+bash
 make test
-🧹 Cleanup Utility
+🧹 Cleanup Utility Remove temporary files and cache with:
 
-Remove temporary files and cache with:
-
-Bash
-
+bash
 make clean
-ℹ️ Available Commands
+ℹ️ Available Commands For a list of all available make commands and their descriptions, run:
 
-For a list of all available make commands and their descriptions, run:
-
-Bash
-
+bash
 make help
 Available commands:
-  make install         - Install dependencies
-  make docker-start    - Start PostgreSQL + Feddit API
-  make docker-stop     - Stop running containers
-  make test            - Run unit tests (ensuring PostgreSQL is up)
-  make run             - Start the Flask application
-  make clean           - Remove temporary files
+
+bash
+make install         # Install dependencies
+make docker-start    # Start PostgreSQL + Feddit API
+make docker-stop     # Stop running containers
+make test            # Run unit tests (ensuring PostgreSQL is up)
+make run             # Start the Flask application
+make clean           # Remove temporary files
