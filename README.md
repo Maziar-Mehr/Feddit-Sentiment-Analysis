@@ -37,10 +37,45 @@ Install the required dependencies using the following command:
 
 ```bash
 make install
+```
 
 ## 🐳 Start & Stop Services
 Start the PostgreSQL and API services with:
 
 ```bash
 make docker-start
+```
+Stop the running containers using:
 
+```bash
+make docker-stop
+```
+
+## 🚀 Run the Application
+Launch the Flask API service with:
+
+```bash
+make run
+```
+
+## ✅ Execute Automated Tests
+Run unit tests to validate API functionality with:
+
+```bash
+make test
+```
+
+## 🧹 Cleanup Utility
+Remove temporary files and cache with:
+
+```bash
+make clean
+```
+
+## ℹ️ Available Commands
+For a list of all available make commands and their descriptions, run:
+
+
+```bash
+make help
+```
