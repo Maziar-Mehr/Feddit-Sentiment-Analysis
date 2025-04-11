@@ -30,11 +30,16 @@ Welcome to **Subfeddit**, a high-performance **Flask-based Sentiment Analysis AP
 🔹 **Docker** – Containerized deployment  
 🔹 **GitHub Actions** – Automated testing  
 
-Markdown
-
 ## 📦 Installation & Dependency Management
 
 Install the required dependencies using the following command:
 
 ```bash
 make install
+
+## 🐳 Start & Stop Services
+
+Start the PostgreSQL and API services with:
+
+```bash
+make docker-start
