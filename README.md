@@ -30,8 +30,19 @@ Welcome to **Subfeddit**, a high-performance **Flask-based Sentiment Analysis AP
 🔹 **Docker** – Containerized deployment  
 🔹 **GitHub Actions** – Automated testing  
 
-## 🚀 **Installation & Setup**  
+📦 Installation & Dependency Management
+bash
+make install  # Installs required dependencies
+🐳 Start & Stop Services
+bash
+make docker-start  # Starts PostgreSQL and API services  
+make docker-stop   # Stops running containers
+🚀 Run the Application
+bash
+make run  # Launches the Flask API service
+✅ Execute Automated Tests
+bash
+make test  # Runs unit tests to validate API functionality
+🧹 Cleanup Utility
+bash
 
-### 📥 **1️⃣ Clone the Repository**
-```bash
-git clone <https://github.com/Maziar-Mehr/subfeddit.git>
