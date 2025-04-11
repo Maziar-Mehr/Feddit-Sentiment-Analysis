@@ -1,7 +1,7 @@
 # 🌟 Feddit – Sentiment Analysis Microservice 🚀  
 
 ## 🏆 **Overview**  
-Welcome to **Subfeddit**, a high-performance **Flask-based Sentiment Analysis API** powered by **Hugging Face Transformers**. This microservice **dynamically analyzes user-generated comments**, classifying them as **positive** or **negative**, while providing a confidence score (`polarity`).  
+A high-performance **Flask-based Sentiment Analysis API** powered by **Hugging Face Transformers**. This microservice **dynamically analyzes user-generated comments**, classifying them as **positive** or **negative**, while providing a confidence score (`polarity`).  
 
 🎯 **Key Features:**  
 ✅ Real-time **sentiment classification**  
