@@ -34,9 +34,7 @@ Markdown
 
 ## 📦 Installation & Dependency Management
 
-Title: ## 📦 Installation & Dependency Management
-Description: Install the required dependencies using the following command:
-Code Block:
-Bash
+Install the required dependencies using the following command:
 
+```bash
 make install
